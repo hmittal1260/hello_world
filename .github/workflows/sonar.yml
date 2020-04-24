@@ -14,5 +14,6 @@ jobs:
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@master
       with:
+        projectBaseDir: my-custom-directory
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
