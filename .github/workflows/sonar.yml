@@ -6,6 +6,7 @@ name: sonar using github actions
 # events but only for the master branch
 on: push
 jobs:
+
   sonarQubeTrigger:
     name: SonarQube Trigger
     runs-on: ubuntu-latest
